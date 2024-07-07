@@ -7,8 +7,8 @@ from gotrue.errors import AuthApiError
 app = Flask(__name__)
 app.config.from_object(Config)
 
-SUPABASE_URL = 'https://leiurblladhjvaqonvqc.supabase.co'
-SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxlaXVyYmxsYWRoanZhcW9udnFjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc4ODA0NjYsImV4cCI6MjAyMzQ1NjQ2Nn0.GLigWdUFVgUuEoXx5vmP1g4amHZdMLX0raf2PtaGdaI'
+SUPABASE_URL = ''
+SUPABASE_KEY = ''
 
 # Initialize Supabase client
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
@@ -152,3 +152,4 @@ def update_member_role():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
